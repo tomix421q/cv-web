@@ -1,8 +1,3 @@
-import Navbar from '../components/Navbar'
-import ParticlesBackground from '../components/ParticlesBackground'
-
-import Image from 'next/image'
-
 export default function Home() {
   return (
     <div className='relative max-w-7xl px-4 mx-auto'>

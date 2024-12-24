@@ -9,8 +9,6 @@ const ParticlesBackground = () => {
   const [lineColor, setLineColor] = useState('#ffffff')
   const [lineDensity, setLineDensity] = useState(800)
 
-  console.log(pathName)
-
   useEffect(() => {
     switch (pathName) {
       case '/aboutme':
