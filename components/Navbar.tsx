@@ -18,14 +18,14 @@ const Navbar = () => {
           <NavbarLinks />
         </nav>
         {/* MOBILE NAV */}
-        <nav className='flex md:hidden my-1'>
+        <nav className='flex lg:hidden my-1'>
           <Sheet>
             <SheetTrigger>
               <MenuIcon className='flex items-center size-10 text-primary' />
             </SheetTrigger>
             <SheetContent side={'left'}>
               <SheetHeader>
-                <SheetTitle>Menu</SheetTitle>
+                <SheetTitle className='px-3'>MENU</SheetTitle>
                 <SheetDescription className='sr-only'>Navigacia</SheetDescription>
                 <Separator />
               </SheetHeader>

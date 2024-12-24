@@ -14,7 +14,7 @@ const NavbarLinks = () => {
   const location = usePathname()
 
   return (
-    <div className='flex flex-col lg:flex-row justify-start lg:items-center my-auto gap-y-4  text-3xl lg:text-xl mt-10 lg:mt-0 font-extrabold lg:h-full '>
+    <div className='flex flex-col lg:flex-row justify-start lg:items-center my-auto   text-3xl lg:text-xl mt-6 lg:mt-0 font-extrabold lg:h-full '>
       {navbarLinks.map((item) => {
         return (
           <a
@@ -24,7 +24,7 @@ const NavbarLinks = () => {
               location === item.href
                 ? 'h-full bg-secondary text-white border-b-4 border-primary w-full lg:w-fit'
                 : '',
-              ' px-4 lg:px-8 flex items-center'
+              'px-2 py-3 lg:px-8 flex items-center'
             )}
           >
             {item.name}
