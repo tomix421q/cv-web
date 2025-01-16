@@ -48,7 +48,7 @@ const WorkCard = ({ myWorkCardData }: { myWorkCardData: MyWorkCardType }) => {
   }
 
   return (
-    <main className='bg-gradient-to-br from-gray-50 to-gray-300 w-full md:w-[500px] min-h-[700px] rounded-3xl shadow-secondary shadow-inner p-2 h-fit bg-clip-content'>
+    <main className='bg-gradient-to-br from-gray-50 to-gray-300 w-full md:w-[500px] min-h-[600px] rounded-3xl shadow-secondary shadow-inner p-2 h-fit bg-clip-content'>
       {/*  */}
       {/* ____HEADER */}
       <header className='flex items-center p-2 gap-1 bg-primary/40 bg-gradient-to-r from-violet-400/40 to-primary/50 rounded-t-xl'>
