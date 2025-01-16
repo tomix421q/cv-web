@@ -1,18 +1,17 @@
 'use client'
 import Image from 'next/image'
-import logo from './../public/logo.png'
-import NavbarLinks from './NavbarLinks'
+import logo from './../../public/logo.png'
 import { MenuIcon } from 'lucide-react'
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
-import { Separator } from './ui/separator'
-import { Button } from './ui/button'
 import Link from 'next/link'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
+import { Separator } from '../ui/separator'
+import NavbarLinks from './NavbarLinks'
 
 const Navbar = () => {
   return (
     <div className='w-full mx-auto px-2 flex items-center justify-between  bg-gradient-to-r from-white/80 to-gray-200/70 mb-14 shadow-2xl shadow-secondary'>
       <div className='max-w-7xl flex justify-between items-center w-full mx-auto text-secondary '>
-        <Link href={'/'} className='bg-white border-b-2 border-primary'>
+        <Link href={'/'} className='bg-white border-b-2 border-primary hover:scale-105 duration-300'>
           <Image src={logo} alt='logo' width={50} height={50} priority className='object-cover !size-10 ' />
         </Link>
 
@@ -21,7 +20,7 @@ const Navbar = () => {
           <NavbarLinks />
         </nav>
         {/* MOBILE NAV */}
-        <nav className='flex lg:hidden my-1'>
+        <nav className='flex lg:hidden my-1 py-1'>
           <Sheet>
             <SheetTrigger>
               <MenuIcon className='flex items-center size-10 text-primary' />

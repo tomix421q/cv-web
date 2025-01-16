@@ -1,6 +1,6 @@
 'use client'
 import { cn } from '@/lib/utils'
-import { BicepsFlexedIcon, Contact, HomeIcon, PickaxeIcon, UserRound, UserSearch } from 'lucide-react'
+import { BicepsFlexedIcon, Contact, HomeIcon, PickaxeIcon, UserRound } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
 const navbarLinks = [
@@ -36,7 +36,7 @@ const navbarLinks = [
     id: 3,
     name: (
       <p className='flex items-center gap-x-1'>
-        <PickaxeIcon size={25} className='text-primary' /> Moja praca
+        <PickaxeIcon size={25} className='text-primary' /> Moja práca
       </p>
     ),
     href: '/work',
@@ -56,7 +56,7 @@ const NavbarLinks = () => {
   const location = usePathname()
 
   return (
-    <div className='flex flex-col lg:flex-row justify-start lg:items-center my-auto text-2xl lg:text-xl mt-6 lg:mt-0 font-semibold lg:h-full'>
+    <div className='flex flex-col lg:flex-row justify-start lg:items-center my-auto text-2xl lg:text-xl mt-6 lg:mt-0 md:font-semibold lg:h-full'>
       {navbarLinks.map((item) => {
         return (
           <a
