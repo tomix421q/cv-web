@@ -38,13 +38,14 @@ const pds2: MyWorkCardType = {
     '/work/pds2/PDS React 4.jpg',
     '/work/pds2/PDS React 5.jpg',
     '/work/pds2/PDS React 6.jpg',
-    '/work/pds2/PDS React 7.jpg'
+    '/work/pds2/PDS React 7.jpg',
   ],
   technologies: ['.NET API', 'Tailwind', 'Entity FM', 'MsSql', 'Axios', 'S7.net'],
   description:
     'Tento projekt som vyvinul ako pokračovanie predchádzajúceho, kde som pridal databázu, použil React a zaviedol niekoľko ďalších rozšírení. Okrem toho je tento projekt určený na monitorovanie v reálnom čase a ukladanie dát v rámci siete našej spoločnosti, vďaka čomu je nedostupný pre online prezeranie.',
   sourceCode: 'https://github.com/tomix421q/ProcessDataShare_dotnetReact',
   webLink: '',
+  video: '/work/pds2/videoPds.mp4',
 }
 
 const bks: MyWorkCardType = {

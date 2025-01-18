@@ -72,7 +72,7 @@ const WorkCard = ({ myWorkCardData }: { myWorkCardData: MyWorkCardType }) => {
         <Carousel className='w-full h-auto overflow-hidden'>
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className='relative '>
+              <CarouselItem key={index} className='relative'>
                 <Button
                   asChild
                   onClick={() => openDialog(index)}
@@ -81,9 +81,16 @@ const WorkCard = ({ myWorkCardData }: { myWorkCardData: MyWorkCardType }) => {
                 >
                   <Maximize className='!size-8' />
                 </Button>
-                <Image src={image} width={800} height={400} alt='sad' className='object-contain max-h-[240px]' />
+                <Image src={image} width={1200} height={800} alt='sad' className='object-cover max-h-[240px]' />)
               </CarouselItem>
             ))}
+            {myWorkCardData.video && (
+              <CarouselItem className='relative'>
+                <video controls>
+                  <source src={myWorkCardData.video} type='video/mp4'></source>
+                </video>
+              </CarouselItem>
+            )}
           </CarouselContent>
           <CarouselPrevious className='ml-14 bg-white text-black size-6' />
           <CarouselNext className='mr-14 bg-white text-black size-6' />

@@ -166,18 +166,18 @@ const Myskills = ({ variant }: { variant: number }) => {
             title={'OSTATNE'}
             subTitle={'KEYENCE & COGNEX & ...'}
             description={
-              'Špecializujem sa na kamerové inšpekčné systémy, predovšetkým na platformy Keyence a Cognex. Mám rozsiahle skúsenosti s implementáciou a optimalizáciou inšpekčných algoritmov. Hoci nemám priame skúsenosti s komplexnou implementáciou celých systémov, dokážem samostatne realizovať aj rozsiahlejšie úpravy existujúcich riešení. Som držiteľom osvedčenia §21 pre prácu s elektrickými zariadeniami a certifikátu pre výučbu študentov duálneho vzdelávania.'
+              'Špecializujem sa na kamerové inšpekčné systémy, s hlavným zameraním na platformy Keyence a Cognex. Mám bohaté skúsenosti s implementáciou a optimalizáciou inšpekčných algoritmov. Aj keď nemám priame skúsenosti s komplexnou implementáciou celých systémov, dokážem efektívne realizovať rozsiahle úpravy existujúcich riešení. Som držiteľom osvedčenia §21 pre prácu na elektrických zariadeniach a certifikátu oprávňujúceho na výučbu študentov v systéme duálneho vzdelávania.'
             }
             ring='rose'
-            progressBar1Text={'keyence -> kamery,snimace'}
+            progressBar1Text={'Keyence -> Inšpekčné systémy, snímače'}
             progressBar1Value={80}
-            progressBar2Text='cognex -> kamery'
+            progressBar2Text='Cognex -> Vision systémy'
             progressBar2Value={90}
-            progressBar3Text='menice'
+            progressBar3Text='Meniče'
             progressBar3Value={30}
-            progressBar4Text='elektrika -> §21'
+            progressBar4Text='Elektrotechnická spôsobilosť §21'
             progressBar4Value={100}
-            progressBar5Text='Štátny certifikát na výučbu študentov duálneho vzdelávania'
+            progressBar5Text='Certifikát pre duálne vzdelávanie'
             progressBar5Value={100}
           />
           <Cable className='size-96 my-auto text-rose-200/70 hidden lg:flex' />

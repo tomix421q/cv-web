@@ -38,7 +38,7 @@ const Contact = () => {
           asChild
           className='size-[170px] md:size-[150px] cursor-pointer border-2 border-gray-950 hover:border-primary duration-200 ease-linear'
         >
-          <Link href={'tel:+421910387825'} target='_blank' className='flex flex-col overflow-hidden'>
+          <Link href={'https://m.me/tomas.zilka.3/'} target='_blank' className='flex flex-col overflow-hidden'>
             <Facebook className='!size-[100px] md:!size-[100px] text-violet-400' />
             <div className='flex items-center flex-col justify-center h-full w-full text-xl border-t-[1px] border-white'>
               <p className='text-black/70 text-sm tracking-widest uppercase pt-1'>Messenger</p>

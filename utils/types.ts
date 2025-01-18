@@ -6,13 +6,14 @@ export type MyWorkCardType = {
   description: string
   sourceCode?: string
   webLink?: string
+  video?: string
 }
 
 export type SkillCardType = {
   title: string
   subTitle: string
   description: string
-  ring?: 'sky' | 'orange' | 'lime' | 'rose' 
+  ring?: 'sky' | 'orange' | 'lime' | 'rose'
   progressBar1Text: string
   progressBar1Value: number
   progressBar2Text?: string

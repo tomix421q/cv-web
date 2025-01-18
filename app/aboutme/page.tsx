@@ -1,8 +1,9 @@
 import Header from '@/components/utils/Header'
 import Image from 'next/image'
 import aboutImage from './../../public/About Photo.png'
-import { ArrowRightFromLine, ArrowUpFromDotIcon, ArrowUpFromLine, Link } from 'lucide-react'
+import { Link2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -75,16 +76,18 @@ const page = () => {
         {/* buttons */}
         <section className='flex flex-col gap-4 md:gap-10'>
           <Button asChild variant={'outline'} size={'lg'} className='p-4 h-auto w-auto cursor-pointer'>
-            <div>
+            <Link href={'/work'}>
               <h3 className='text-xl lg:text-5xl font-[tektur] tracking-widest font-semibold'>Pozri si moju prácu</h3>
-              <Link className='!size-8 md:!size-14 text-violet-400' />
-            </div>
+              <Link2 className='!size-8 md:!size-14 text-violet-400' />
+            </Link>
           </Button>
           <Button asChild variant={'outline'} size={'lg'} className='p-4 h-auto w-auto cursor-pointer'>
-            <div>
-              <h3 className='text-xl lg:text-5xl font-[tektur] tracking-widest font-semibold text-start'>Pozri si moje zručnosti</h3>
-              <Link className='!size-8 md:!size-14 text-violet-400' />
-            </div>
+            <Link href={'/myskills'}>
+              <h3 className='text-xl lg:text-5xl font-[tektur] tracking-widest font-semibold text-start'>
+                Pozri si moje zručnosti
+              </h3>
+              <Link2 className='!size-8 md:!size-14 text-violet-400' />
+            </Link>
           </Button>
         </section>
       </main>
