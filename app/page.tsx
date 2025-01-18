@@ -1,7 +1,7 @@
 import Contact from '@/components/Contact'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { Github, Layers2, User } from 'lucide-react'
+import { Layers2, User } from 'lucide-react'
 import Link from 'next/link'
 
 export default async function Home() {

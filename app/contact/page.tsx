@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div>
       <Header text={'Kontakt'} emoji={'📞'} />
-      <section className='min-h-screen flex flex-col mt-32 items-center'>
+      <section className='min-h-screen flex flex-col mt-12 lg:mt-32 items-center'>
         <div>
           <h1 className='my-6 text-lg md:text-xl lg:text-2xl lg:max-w-3xl font-semibold tracking-widest font-[tektur]'>
             Rád zodpoviem vaše otázky. Pošlite mi správu alebo zavolajte a ozvem sa vám čo najskôr.
