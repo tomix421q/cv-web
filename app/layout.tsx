@@ -30,6 +30,11 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <script
+        defer
+        src='http://portfolio-umami-5bc7e5-159-69-80-113.traefik.me/script.js'
+        data-website-id='99db2d82-3323-49f8-8be4-1a65c04e0bc8'
+      ></script>
       <body className={`${montserrat.variable} ${tektur.variable} antialiased`}>
         <Suspense fallback={<LoadingComponent />}>
           {/* BG  */}
