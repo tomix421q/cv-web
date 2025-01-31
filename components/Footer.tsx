@@ -23,16 +23,16 @@ const Footer = () => {
             <Link href={'/'} className='hover:text-primary'>
               Domov
             </Link>
-            <Link href={'/'} className='hover:text-primary'>
+            <Link href={'/aboutme'} className='hover:text-primary'>
               O mne
             </Link>
-            <Link href={'/'} className='hover:text-primary'>
+            <Link href={'/myskills'} className='hover:text-primary'>
               Zručnosti
             </Link>
-            <Link href={'/'} className='hover:text-primary'>
+            <Link href={'/work'} className='hover:text-primary'>
               Moja práca
             </Link>
-            <Link href={'/'} className='hover:text-primary'>
+            <Link href={'/contact'} className='hover:text-primary'>
               Kontakt
             </Link>
           </div>
