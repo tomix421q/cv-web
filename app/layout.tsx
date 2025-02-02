@@ -34,7 +34,7 @@ export default async function RootLayout({
       {/* umami script  */}
       <Script
         async
-        src='http://portfolio-umami-5bc7e5-159-69-80-113.traefik.me/script.js'
+        src='http://portfolio-umami-4f0010-5263ad-159-69-80-113.traefik.me/script.js'
         data-website-id='99db2d82-3323-49f8-8be4-1a65c04e0bc8'
       />
       <body className={`${montserrat.variable} ${tektur.variable} antialiased`}>
