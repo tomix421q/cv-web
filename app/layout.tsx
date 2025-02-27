@@ -32,7 +32,7 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       {/* umami script  */}
-      <Script async src='https://umami.zilka-tomas.com/script.js' data-website-id='d2b135c6-081e-40e8-b046-4bf1ccfaee48' />
+      <Script async src='https://umami.tz-server.online/script.js' data-website-id='0c125c14-15b0-4969-960a-418334fd51ae' />
       <body className={`${montserrat.variable} ${tektur.variable} antialiased`}>
         <Suspense fallback={<LoadingComponent />}>
           {/* BG  */}
