@@ -1,6 +1,6 @@
 import Header from '@/components/utils/Header'
 import Image from 'next/image'
-import aboutImage from './../../public/About Photo.png'
+import aboutImage from './../../public/myPhoto.png'
 import { Link2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
@@ -12,28 +12,21 @@ const page = () => {
       <main className='space-y-32'>
         {/* description about me */}
         <section className='grid lg:grid-cols-2 justify-center items-center mt-16'>
-          <p className='my-auto text-md md:text-xl font-[tektur] tracking-wide'>
+          <p className='my-auto text-md md:text-lg font-[tektur] tracking-widest'>
             Už <span className='text-primary font-bold'>7</span> rokov sa pohybujem vo svete automatizácie, s dominantným
             zameraním na automobilový priemysel.Posledných <span className='text-primary font-bold'>5</span> rokov som sa
             špecializoval na programovanie
             <span className='text-primary font-bold'> PLC a robotov</span>, kde som získal hlboké znalosti a praktické skúsenosti.
             Moja vášeň pre technológie ma však neustále ženie vpred a preto sa vo voľnom čase venujem aj vývoju{' '}
-            <span className='text-primary font-bold'>webových aplikácií </span> a implementácii softvérových riešení. V tejto
-            oblasti s obľubou pracujem s technológiami ako{' '}
-            <span className='text-primary font-bold'>React, NextJS a Tailwind</span> , ktoré mi umožňujú vytvárať moderné a
-            efektívne riešenia. Mojou ambíciou je prepojiť odbornosť v automatizácii s kreatívnym prístupom k webovému vývoju a
-            prinášať tak inovatívne riešenia. Som otvorený novým výzvam a neustále sa snažím rozširovať svoje znalosti a
-            zručnosti.
+            <span className='text-primary font-bold'>webových aplikácií </span>,{' '}
+            <span className='text-primary font-bold'>mobilných aplikácií</span> a implementácii softvérových riešení. Momentálne
+            (2026) používam hlavne <span className='text-primary font-bold'>SvelteKit, Bun a Flutter.</span> V minulosti som
+            taktiež pracoval s Reactom, Next.js a Node.js. Tieto technológie mi pomáhajú vytvárať moderné a efektívne riešenia.
+            Mojou ambíciou je prepojiť odbornosť v automatizácii s kreatívnym prístupom k webovému vývoju a prinášať tak
+            inovatívne riešenia. Som otvorený novým výzvam a neustále sa snažím rozširovať svoje znalosti a zručnosti.
           </p>
           <div className={`flex justify-center`}>
-            <Image
-              src={aboutImage}
-              alt='fotka'
-              width={1000}
-              height={1000}
-              priority
-              className='h-[350px] w-auto md:h-[500px] lg:-mt-[100px]'
-            />
+            <Image src={aboutImage} alt='fotka' width={800} height={800} priority className='h-[350px] w-auto md:h-[450px]' />
           </div>
         </section>
 

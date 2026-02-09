@@ -4,6 +4,8 @@ import WorkCard from './WorkCard'
 const RealizedProjects = () => {
   return (
     <div className='flex flex-wrap gap-y-20 md:gap-y-20 justify-center lg:gap-y-36 lg:justify-between md:mx-6'>
+      <WorkCard myWorkCardData={Scrapify} />
+      <WorkCard myWorkCardData={Alarify} />
       <WorkCard myWorkCardData={pds1} />
       <WorkCard myWorkCardData={pds2} />
       <WorkCard myWorkCardData={bks} />
@@ -11,6 +13,48 @@ const RealizedProjects = () => {
   )
 }
 export default RealizedProjects
+
+const Scrapify: MyWorkCardType = {
+  name: 'Scrapify',
+  projectDate: '03.11.2025',
+  images: [
+    '/work/scrapify/screen1.png',
+    '/work/scrapify/screen2.png',
+    '/work/scrapify/screen3.png',
+    '/work/scrapify/screen4.png',
+    '/work/scrapify/screen5.png',
+    '/work/scrapify/screen6.png',
+    '/work/scrapify/screen7.png',
+    '/work/scrapify/screen8.png',
+    '/work/scrapify/screen9.png',
+  ],
+  technologies: ['SvelteKit', 'Prisma', 'MSsql', 'Tailwind', 'SQlite', 'ShadCn'],
+  description:
+    'Systém pre správu a evidenciu nepodarkov Táto aplikácia slúži na efektívnu digitalizáciu procesov spojených so zápisom scrapových výrobkov a ich následným sledovaním. Systém je rozdelený na používateľské roly pre maximálnu bezpečnosť a prehľadnosť: moderátor spravuje systém a vytvára profily pre operátorov, zatiaľ čo procesní inžinieri vopred definujú technické parametre nepodarkov. Samotný operátor sa po prihlásení na hlavnej stránke venuje už len rýchlemu nahrávaniu údajov, ktoré sa okamžite ukladajú do centrálnej firemnej databázy. Vďaka tomuto riešeniu je zabezpečená plná trasovateľnosť každého dielu, pričom systém presne eviduje, kto záznam pridal, kedy sa tak stalo a v rámci ktorého projektu k chybe došlo.',
+  sourceCode: 'https://github.com/tomix421q/alarmHub',
+  webLink: '',
+}
+
+const Alarify: MyWorkCardType = {
+  name: 'Alarify',
+  projectDate: '09.02.2026',
+  images: [
+    '/work/alarify/screen1.png',
+    '/work/alarify/screen2.png',
+    '/work/alarify/screen3.png',
+    '/work/alarify/screen4.png',
+    '/work/alarify/screen5.png',
+    '/work/alarify/screen6.png',
+    '/work/alarify/screen7.png',
+    '/work/alarify/screen8.jpg',
+    '/work/alarify/screen9.jpg',
+  ],
+  technologies: ['Flutter', 'Riverpod', 'Bun', 'Hono', 'Prisma', 'SQlite', 'Freezed'],
+  description:
+    'Komplexný systém na distribúciu kritických notifikácií a správu úloh v reálnom čase. Aplikácia rieši problém prehliadnutých správ tým, že využíva natívne rozhrania (CallKit) na prebudenie telefónu podobne ako pri prichádzajúcom hovore, aj keď je zariadenie zamknuté. Obsahuje backend na mieru, správu používateľov a živú synchronizáciu stavov úloh.',
+  sourceCode: 'https://github.com/tomix421q/cv-web#',
+  webLink: '',
+}
 
 const pds1: MyWorkCardType = {
   name: 'Process data share',

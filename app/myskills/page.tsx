@@ -24,7 +24,7 @@ const MySkillsRoute = () => {
             <NavigationMenuItem>
               <NavigationMenuLink onMouseDown={() => handleTabClick(1)} className='w-full'>
                 <Button variant={`${numberTab === 1 ? 'default' : 'secondary'}`} className='font-bold '>
-                  Web dev
+                  Web / Mobile DEV
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>

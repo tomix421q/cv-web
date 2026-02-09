@@ -15,7 +15,7 @@ const Myskills = ({ variant }: { variant: number }) => {
             title={'Frontend Javascript'}
             subTitle={'React & Next & ...'}
             description={
-              'Aktívne sa venujem JavaScript vývoju, pričom už 3 roky sa špecializujem na React ekosystém. Ovládam pokročilé koncepty Reactu vrátane hooks, context API a state managementu. Aktívne využívam Next.js pre SSR a optimalizáciu výkonu. V blízkej budúcnosti plánujem rozšíriť svoje znalosti o Vue.js framework a React native.'
+              'V oblasti JavaScriptu sa v súčasnosti zameriavam výhradne na TypeScript. Ako primárny meta-framework využívam SvelteKit, ktorý nahradil moje predchádzajúce pôsobenie v Next.js. Hoci som v minulosti vyvíjal primárne v Reacte, dnes preferujem Svelte, a to najmä kvôli vyššej rýchlosti vývoja a lepšiemu výkonu výsledných aplikácií.'
             }
             ring='orange'
             progressBar1Text={'react'}
@@ -24,8 +24,8 @@ const Myskills = ({ variant }: { variant: number }) => {
             progressBar2Value={80}
             progressBar3Text='vanilla & jquery'
             progressBar3Value={20}
-            progressBar4Text='react-native'
-            progressBar4Value={10}
+            progressBar4Text='SvelteKit'
+            progressBar4Value={80}
             progressBar5Text='tanstack & reactrouter'
             progressBar5Value={50}
           />
@@ -39,15 +39,17 @@ const Myskills = ({ variant }: { variant: number }) => {
             title={'Backend Javascript'}
             subTitle={'NEXT & Fastify & ...'}
             description={
-              'Na backende sa zameriavam na vývoj REST API pomocou Node.js. Mám skúsenosti s Next.js API routes pre full-stack aplikácie a Fastify pre vysokovýkonné mikroslužby. Ovládam princípy REST architektúry, middleware a autentifikácie.'
+              'Momentálne sa zameriavam predovšetkým na Bun, a to najmä pre jeho rýchlosť a natívnu podporu TypeScriptu, pričom na tento runtime postupne presúvam svoj backendový vývoj z Node.js. Kvôli efektivite rád využívam meta-frameworky, v súčasnosti najmä SvelteKit, ktorý dopĺňam o ľahký API framework Hono. Okrem toho mám skúsenosti aj s jazykom C# a platformou .NET.'
             }
             ring='sky'
-            progressBar1Text={'next'}
-            progressBar1Value={60}
-            progressBar2Text='fastify'
-            progressBar2Value={40}
+            progressBar1Text={'Node'}
+            progressBar1Value={50}
+            progressBar2Text='Bun'
+            progressBar2Value={30}
             progressBar3Text='express'
             progressBar3Value={40}
+            progressBar4Text='Hono'
+            progressBar4Value={40}
           />
         </div>
         {/* card */}
@@ -90,8 +92,8 @@ const Myskills = ({ variant }: { variant: number }) => {
             progressBar3Value={50}
             progressBar4Text='Neon & Supabase & Atlas & SSMS studio'
             progressBar4Value={70}
-            progressBar5Text='MSsql'
-            progressBar5Value={30}
+            progressBar5Text='Sqlite'
+            progressBar5Value={60}
           />
         </div>
         {/* card */}
@@ -101,19 +103,15 @@ const Myskills = ({ variant }: { variant: number }) => {
             title={'Ostatne'}
             subTitle={'NodeRed & Next & ...'}
             description={
-              'Okrem hlavných technológií sa venujem aj Node-RED pre IoT riešenia. Mám základné skúsenosti s C# a .NET frameworkom z menších projektov. V roku 2025 sa plánujem zamerať na Python, najmä v oblasti API.'
+              'Okrem toho často využívam Node-RED na komunikáciu a efektívny zber dát. V súčasnosti sa v rámci nových technológií sústredím predovšetkým na Flutter a neustále vyhľadávanie nových riešení, ktoré posúvajú moju prácu vpred.'
             }
             ring='orange'
             progressBar1Text={'nodered'}
             progressBar1Value={60}
-            progressBar2Text='C#'
-            progressBar2Value={10}
-            progressBar3Text='.net'
-            progressBar3Value={10}
-            progressBar4Text='python [2025]'
-            progressBar4Value={0}
-            progressBar5Text='Zod'
-            progressBar5Value={60}
+            progressBar2Text='Flutter'
+            progressBar2Value={20}
+            progressBar3Text='Riverpod(flutter)'
+            progressBar3Value={20}
           />
           <CircleEllipsis className='size-96 my-auto text-orange-200/70 hidden lg:flex' />
         </div>

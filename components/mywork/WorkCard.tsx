@@ -77,11 +77,18 @@ const WorkCard = ({ myWorkCardData }: { myWorkCardData: MyWorkCardType }) => {
                   asChild
                   onClick={() => openDialog(index)}
                   size={'icon'}
-                  className='absolute top-1 right-1 bg-black/40 p-1 cursor-pointer'
+                  className={`absolute top-1 right-1 bg-black/40 p-1 cursor-pointer `}
                 >
                   <Maximize className='!size-8' />
                 </Button>
-                <Image src={image} width={1200} height={800} alt='sad' className='object-cover max-h-[240px]' />)
+                <Image
+                  src={image}
+                  width={1200}
+                  height={800}
+                  alt='sad'
+                  className={`object-contain max-h-[240px] ${name === 'Alarify' ? 'max-h-[970px]' : 'max-h-[240px]'}`}
+                />
+                )
               </CarouselItem>
             ))}
             {myWorkCardData.video && (
@@ -110,7 +117,7 @@ const WorkCard = ({ myWorkCardData }: { myWorkCardData: MyWorkCardType }) => {
                 width={3840}
                 height={2160}
                 alt='image'
-                className='object-cover w-full h-full'
+                className={`object-cover w-full h-full ${name === 'Alarify' ? ' w-1/2' : 'h-full'}`}
               />
               {/* Tlačidlá pre posúvanie */}
               <Button

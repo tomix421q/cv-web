@@ -24,21 +24,14 @@ const WorkRoute = () => {
             <NavigationMenuItem>
               <NavigationMenuLink onMouseDown={() => handleTabClick(1)} className='w-full'>
                 <Button variant={`${numberTab === 1 ? 'default' : 'secondary'}`} className='font-bold '>
-                  Realizovane projekty
+                  Moje projekty
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink onMouseDown={() => handleTabClick(2)}>
                 <Button variant={`${numberTab === 2 ? 'default' : 'secondary'}`} className='font-bold'>
-                  Experimentalne projekty
-                </Button>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink onMouseDown={() => handleTabClick(3)}>
-                <Button variant={`${numberTab === 3 ? 'default' : 'secondary'}`} className='font-bold'>
-                  Tutorial projekty
+                  Experimental
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -49,7 +42,7 @@ const WorkRoute = () => {
       <div className='mt-24'>
         {numberTab === 1 && <RealizedProjects />}
         {numberTab === 2 && <ExperimentalProjects />}
-        {numberTab === 3 && <TutorialProjects />}
+        {/* {numberTab === 3 && <TutorialProjects />} */}
       </div>
     </main>
   )
