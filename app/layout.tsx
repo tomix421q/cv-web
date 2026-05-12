@@ -3,8 +3,6 @@ import { Montserrat, Tektur } from 'next/font/google'
 import './../style/globals.css'
 import Navbar from '../components/utils/Navbar'
 import ParticlesBackground from '../components/utils/ParticlesBackground'
-import { Suspense } from 'react'
-import LoadingComponent from '@/components/utils/LoadingComponent'
 import Footer from '@/components/Footer'
 import Script from 'next/script'
 
@@ -32,24 +30,29 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       {/* umami script  */}
-      <Script async src='https://umami.tz-server.online/script.js' data-website-id='0c125c14-15b0-4969-960a-418334fd51ae' />
+      <head>
+        <Script
+          async
+          src='https://umami.tz-server.online/script.js'
+          data-website-id='0c125c14-15b0-4969-960a-418334fd51ae'
+          strategy='afterInteractive'
+        />
+      </head>
       <body className={`${montserrat.variable} ${tektur.variable} antialiased`}>
-        <Suspense fallback={<LoadingComponent />}>
-          {/* BG  */}
-          <div className='absolute w-full h-screen -z-50'>
-            <ParticlesBackground />
-          </div>
-          {/* NAV */}
-          <nav>
-            <Navbar />
-          </nav>
-          {/* MAIN */}
-          <main className='max-w-7xl mx-auto px-4 md:px-6 lg:px-8 min-h-screen'>{children}</main>
-          {/* FOOTER */}
-          <footer>
-            <Footer />
-          </footer>
-        </Suspense>
+        {/* BG  */}
+        <div className='absolute w-full h-screen -z-50'>
+          <ParticlesBackground />
+        </div>
+        {/* NAV */}
+        <nav>
+          <Navbar />
+        </nav>
+        {/* MAIN */}
+        <main className='max-w-7xl mx-auto px-4 md:px-6 lg:px-8 min-h-screen'>{children}</main>
+        {/* FOOTER */}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   )
