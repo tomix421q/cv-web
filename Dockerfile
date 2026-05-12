@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# 2. Krok: Nasadenie na ľahučký Nginx (zahodí Node.js a nechá si len hotové HTML)
+
 FROM nginx:alpine
 COPY --from=builder /app/out /usr/share/nginx/html
 EXPOSE 80
